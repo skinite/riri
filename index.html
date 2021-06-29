@@ -11,9 +11,44 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-          <link rel="stylesheet" href="wrapper.css">
 
 <style>
+    
+ 
+.wrapper {
+  height: 70vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 16ch;
+  animation: typing 4s steps(16), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+    
+<! -- delete -->
+    
 * {
   box-sizing: border-box;
 }
@@ -41,6 +76,7 @@
   border-radius: 20px;
   font-family:monospace;
   display:block;
+  color: orange;
 }
 
 .button1 {
@@ -59,26 +95,14 @@
     
     <body style="background-color:BlueViolet;">
         
-        <div class="wrapper" >
-  <span>🥰</span>
-  <span>P</span>
-  <span>E</span>
-  <span>E</span>
-  <span>P</span>
-  <span>E</span>
-  <span>E</span>
-  <span>P</span>
-  <span>O</span>
-  <span>O</span>
-  <span>P</span>
-  <span>O</span>
-  <span>O</span>
-  <span>🤢</span>
-
-            
+        <div class="wrapper">
+    <div class="typing-demo">
+🥰peepeepoopoo🤢.</div>
 </div>
         
-        <h1 align="center" style="color:Orange; font-family:monospace; font-size:20px;"> 🥰peepeepoopoo🤢 </h1>
+ 
+                    
+        <h1 align="center" style="color:Orange; font-family:monospace; font-size:20px;"> peepeepoopoo </h1>
 
         <p align="center" style="padding: 15px;">
             
